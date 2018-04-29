@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Postioning Elements with JavaScript
+        </title>
+        <script language="JavaScript" type="text/JavaScript" src="position.js"></script>
+        <style>
+            #square{
+                position: absolute;
+                top: 150;
+                width: 200;
+                height: 200;
+                border: 2px solid black;
+                padding: 10px;
+                background-color: #e0e0e0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>position Elements</h1>
+        <hr>
+        <form  name="form1">
+            <input type="button" name="left" value="<-Left" onclick="pos(-1,0);">
+            <input type="button" name="Right" value="Right->" onclick="pos(1,0);">
+            <input type="button" name="up" value="Up" onclick="pos(0,-1);">
+            <input type="button" name="down" value="Down "onclick="pos(0,1);">
+            <input type="button" name="hide" value="Hide" onclick="hideSquare();">
+            <input type="button" name="show" value="Show" onclick="showSquare();">
+            
+        </form>
+        <hr>
+        <div id="square">
+            <p>This is an absolute positioned layer thar you can move using the bottones above.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Form Example
+        </title>
+        <script language="JavaScript" type="text/javascript">
+        function validate(){
+            if(document.forms.yourname.value.length < 1){
+                alert("please enter your full time.");
+                return false;
+            }
+          
+        
+            if(document.forms.address.value.length < 3){
+                alter("please enter your address number.");
+                return false;
+            }
+            if(document.forms.phone.value.length < 3){
+                alert("please enter your phone number.");
+                return false;
+            }
+            return true;
+        }
+        </script>
+    </head>
+    <body>
+        <h1> Form Example</h1>
+        
+        <p>Enter the following information .When you press the Submit button,the data you entered will be validated, then sent by email.</p>
+        <form name="form1" action="mailto:user@host.com" enctype="text/plain" method="POST" onSubmit="return validate();">
+        <p><b>Name:</b><input type="text" size="20" name="yourname"></p>
+        <p><b>Address:</b><input type="text" size="30" name="address"></p>
+        <p><b>Phone:</b><input type="text" size="15" name="phone"></p>
+        <p><input type="submit" value="submit"></p>    
+    </form>
+    </body>
+</html>
